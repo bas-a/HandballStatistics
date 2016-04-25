@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!-- <html> --><html manifest="offline.appcache">
+<head>
+	<title>Handball statistics</title>
+	<link rel="stylesheet" href="css/style.css"/>
+	
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<link rel="apple-touch-icon" href="img/homescreen-icon.png" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<script type="text/javascript" src="js/lib/stand-alone.js"></script>	
+	
+</head>
+<body id="match">
+	<div id="main">
+		<div class="start-game left">Start</div>
+		<div class="stop-game right">Stop</div>
+		<div class="game-info">
+			<div class="left">
+				<h4>Team 1</h4>
+				<span class="score-team1">0</span>
+			</div>
+			<span>:</span>
+			<div class="right">
+				<h4>Team 2</h4>
+				<span class="score-team2">0</span>
+			</div>
+			<div class="suspention-team1 left">
+				<span>00:00</span>
+				<span>00:00</span>
+			</div>
+			<div class="suspention-team2 right">
+				<span>00:00</span>
+				<span>00:00</span>
+			</div>
+			<div class="time">
+				<span>Periode 1</span>
+				<h4>00:00</h4>
+			</div>
+		</div>
+		
+		<div class="handball-court">
+			
+			<div class="left">
+				<div data-pos="LH" class="LH jersey"></div>
+				<div data-pos="LO" class="LO jersey"></div>
+				<div data-pos="MO" class="MO jersey"></div>
+				<div data-pos="RO" class="RO jersey"></div>
+				<div data-pos="RH" class="RH jersey"></div>
+				<div data-pos="CI" class="CI jersey"></div>
+				<div data-pos="KP" class="KP jersey"></div>
+				<div data-substitute="1" class="jersey"></div>
+				<div data-substitute="2" class="jersey"></div>
+				<div data-substitute="3" class="jersey"></div>
+				<div data-substitute="4" class="jersey"></div>
+				<div data-substitute="5" class="jersey"></div>
+				<div data-substitute="6" class="jersey"></div>
+				<div data-substitute="7" class="jersey"></div>
+			</div>
+			
+			<div class="right">
+				<div class="LH jersey">LH</div>
+				<div class="LO jersey">LO</div>
+				<div class="MO jersey">MO</div>
+				<div class="RO jersey">RO</div>
+				<div class="RH jersey">RH</div>
+				<div class="CI jersey">CI</div>
+				<div class="KP jersey">KP</div>
+			</div>
+			
+			<div class="event-menu">
+				<div id="goal" class="option"><img class="icon" src="img/Ball.png"><span>Goal</span></div>
+				<div id="assist" class="option"><img class="icon" src="img/assist.png"/><span>Assist</span></div>
+				<div id="miss" class="option"><img class="icon" src="img/miss.png" /><span>Mis</span></div>
+				<div id="technical-foul" class="option"><img class="icon" src="img/technical-foul.png" /><span>Technische fout</span></div>
+				<div id="penalty" class="option"><img class="icon" src="img/foul.png" /><span>Straf</span></div>
+				<div class="go-back option"><img class="icon" src="img/back.png" /><span>Terug</span></div>
+				
+				<div class="goal action">
+					<div data-spot="LH" class="area"><div class="dot"></div></div>
+					<div data-spot="MH" class="area"><div class="dot"></div></div>
+					<div data-spot="RH" class="area"><div class="dot"></div></div>
+					<div data-spot="LM" class="area"><div class="dot"></div></div>
+					<div data-spot="MM" class="area"><div class="dot"></div></div>
+					<div data-spot="RM" class="area"><div class="dot"></div></div>
+					<div data-spot="LL" class="area"><div class="dot"></div></div>
+					<div data-spot="ML" class="area"><div class="dot"></div></div>
+					<div data-spot="RL" class="area"><div class="dot"></div></div>
+					<span>Tik op de positie waar geschoten is.</span>
+				</div>
+				
+				<div class="technical-foul action">
+					<div id="pass-foul" class="foul" ><img class="icon" src="img/pass-foul.png" /><span>Paasfout</span></div>
+					<div id="walk-foul" class="foul" ><img class="icon" src="img/walk-foul.png" /><span>Loopfout</span></div>
+					<div id="circle-foul" class="foul" ><img class="icon" src="img/circle-foul.png" /><span>Cirkel</span></div>
+					<div class="go-back" ><img class="icon" src="img/back.png" /><span>Terug</span></div>
+				</div>
+				
+				<div class="penalties action">
+					<div id="yell" class="penalty" ><img class="icon" src="img/yellcard.png" /><span>Geel</span></div>
+					<div id="red" class="penalty" ><img class="icon" src="img/redcard.png" /><span>Rood</span></div>
+					<div id="twomins" class="penalty" ><img class="icon" src="img/twomins.png" /><span>2 min.</span></div>
+					<div class="go-back" ><img class="icon" src="img/back.png" /><span>Terug</span></div>
+				</div>
+
+			</div>
+			
+		</div>
+		
+	</div>
+
+	<script src="js/lib/jquery.js"></script>	
+	<script src="js/lib/jquery-ui.js"></script>	
+	<script src="js/lib/hammer.min.js"></script>
+	<script src="js/lib/hammer.jquery.js"></script>	
+	<script src="js/lib/jquery.ui.touch-punch.min.js"></script>
+	<script src="js/lib/chart.js"></script>
+	<script src="js/lib/underscore.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>	
+	
+</body>
+</html>

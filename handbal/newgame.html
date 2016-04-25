@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!-- <html> --><html manifest="offline.appcache">
+<head>
+	<title>Handball statistics</title>
+	<link rel="stylesheet" href="css/style.css"/>
+	
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<script type="text/javascript" src="js/lib/stand-alone.js"></script>	
+</head>
+<body id="new-game">
+	<div id="main">
+		
+		<div class="team-switch">
+			<div class="team1-button active"></div>
+			<div class="team2-button"></div>
+		</div>
+				
+		<div class="left">
+			<div class="change-team-wrapper">
+				<input type="text" class="change-team-name" />
+				<div>Verander teamnaam</div>
+			</div>
+			<ul class="player-list">
+				<li data-position="LH"><span>LH</span><input type="text" class="player-name" placeholder="Linker hoek" /><input type="number" class="player-number" placeholder="Nr." /></li>
+				<li data-position="LO"><span>LO</span><input type="text" class="player-name" placeholder="Linker opbouw" /><input type="number" class="player-number" placeholder="Nr." /></li>
+				<li data-position="MO"><span>MO</span><input type="text" class="player-name" placeholder="Midden opbouw" /><input type="number" class="player-number" placeholder="Nr." /></li>
+				<li data-position="RO"><span>RO</span><input type="text" class="player-name" placeholder="Rechter opbouw" /><input type="number" class="player-number" placeholder="Nr." /></li>
+				<li data-position="RH"><span>RH</span><input type="text" class="player-name" placeholder="Rechter hoek" /><input type="number" class="player-number" placeholder="Nr." /></li>
+				<li data-position="CI"><span>CI</span><input type="text" class="player-name" placeholder="Cirkel" /><input type="number" class="player-number" placeholder="Nr." /></li>
+				<li data-position="KP"><span>KP</span><input type="text" class="player-name" placeholder="Keeper" /><input type="number" class="player-number" placeholder="Nr." /></li>
+				<li data-position="BENCH"><span>-</span><input type="text" class="player-name" placeholder="Wisselspeler" /><input type="number" class="player-number" placeholder="Nr." /></li>
+				<li data-position="BENCH"><span>-</span><input type="text" class="player-name" placeholder="Wisselspeler" /><input type="number" class="player-number" placeholder="Nr." /></li>
+				<li data-position="BENCH"><span>-</span><input type="text" class="player-name" placeholder="Wisselspeler" /><input type="number" class="player-number" placeholder="Nr." /></li>
+				<li data-position="BENCH"><span>-</span><input type="text" class="player-name" placeholder="Wisselspeler" /><input type="number" class="player-number" placeholder="Nr." /></li>
+				<li data-position="BENCH"><span>-</span><input type="text" class="player-name" placeholder="Wisselspeler" /><input type="number" class="player-number" placeholder="Nr." /></li>
+				<li data-position="BENCH"><span>-</span><input type="text" class="player-name" placeholder="Wisselspeler" /><input type="number" class="player-number" placeholder="Nr." /></li>
+				<li data-position="BENCH"><span>-</span><input type="text" class="player-name" placeholder="Wisselspeler" /><input type="number" class="player-number" placeholder="Nr." /></li>
+			</ul>
+		</div>
+
+		<div class="right">
+			<div class="game-info">
+				<div class="left">
+					<h4>Periodes:</h4>
+					<select class="game-periods">
+						<option value="1">1</option>
+						<option selected="" value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+					</select>
+				</div>
+				<span>x</span>
+				<div class="right">
+					<h4>Speelminuten:</h4>
+					<select class="period-duration">
+						<option value="20">20:00</option>
+						<option value="25">25:00</option>
+						<option selected="" value="30">30:00</option>
+					</select>
+				</div>
+			</div>
+			<div class="handball-court-half">
+				<div id="LH" class="jersey"></div>
+				<div id="LO" class="jersey"></div>
+				<div id="MO" class="jersey"></div>
+				<div id="RO" class="jersey"></div>
+				<div id="RH" class="jersey"></div>
+				<div id="CI" class="jersey"></div>
+				<div id="KP" class="jersey"></div>
+			</div>
+			
+			<a href="https://basariaansz.nl/handbal/match.html" class="new-page">Naar de wedstrijd</a>
+			<a href="https://basariaansz.nl/handbal/" class="new-page">Terug naar menu</a>
+		</div>
+		
+	</div>
+
+	<script src="js/lib/jquery.js"></script>	
+	<script src="js/lib/jquery-ui.js"></script>	
+	<script src="js/lib/hammer.min.js"></script>
+	<script src="js/lib/hammer.jquery.js"></script>	
+	<script src="js/lib/jquery.ui.touch-punch.min.js"></script>
+	<script src="js/lib/chart.js"></script>
+	<script src="js/lib/underscore.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>	
+</body>
+</html>

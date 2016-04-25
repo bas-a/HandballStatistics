@@ -1,0 +1,654 @@
+@font-face {
+    font-family: robotFont;
+    src: url('custom-font.ttf');
+}
+
+body {
+	color: #4c4c4c;
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+a:visited {
+	color: #4c4c4c;
+}
+
+#main {
+    font-family: 'helvetica', 'arial', sans-serif;
+}
+
+/* ---------- HOME ---------- */
+
+.block-container {
+	margin: 134px auto;
+	width: 481px;	
+}
+
+.block {
+	height: 200px;
+	width: 200px;
+	background: -webkit-linear-gradient(#ececec 0%, #f8f8f8 100%);
+	padding: 20px;
+	text-align: center;
+	float: left;
+	font-size: 18px;
+	border: 2px solid #d8d8d8;
+	border-radius: 10px;
+	box-shadow: 2px 2px 5px #626262;
+	margin: 20px;
+}
+
+.block h2 {
+	margin: 47px auto;
+}
+
+a:nth-of-type(3) .block {
+	font-size: 14px;
+	line-height: 156px;
+}
+
+a:nth-of-type(3) .block h2 {
+	margin: 0;
+}
+
+/* ---------- NEW GAME ---------- */
+
+#new-game {
+}
+
+#new-game .team-switch {
+	border-bottom: 2px solid #d8d8d8;
+	margin: 0 0 20px 0;	
+	background: #f0f0f0;
+	height: 60px;
+}
+
+#new-game .team-switch div {
+	height: 60px;
+	width: 50%;
+	line-height: 60px;
+	text-align: center;
+	display: block;
+	float: left;
+	border-right: 2px solid #d8d8d8;
+
+}
+
+#new-game .team-switch .active {
+	background: #e6e6e6;
+}
+
+.change-team-name {
+	height: 45px;
+	margin: 0 0 0 20px;
+	padding: 20px;
+	width: 302px;
+	font-size: 16px;
+	border: 2px solid #d8d8d8;
+	border-right: 0;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	outline: none;
+}
+
+.change-team-name + div {
+	height: 45px;
+	line-height: 45px;
+	width: 170px;
+	font-size: 16px;
+	text-align: center;
+	border: 2px solid #d8d8d8;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;	
+	color: #686868;
+	float: right;
+	background: #e6e6e6;
+}
+
+#new-game ul {
+	margin: 10px 0 0 20px;
+	padding: 0;
+	width: 472px;
+	border: 2px solid #d8d8d8;
+	border-radius: 5px;
+}
+
+#new-game ul li {
+	list-style: none;
+	height: 43px;
+	line-height: 43px;
+}
+
+#new-game ul li:nth-of-type(even) {
+	background: #f8f8f8;
+}
+
+#new-game li input {
+	height: 43px;
+	padding: 10px;
+	font-size: 16px;
+	outline: none;
+	border: 0;
+	background: rgba(0,0,0,0);
+}
+
+#new-game .player-list li span {
+	width: 50px;
+	height: 43px;
+	float: left;
+	border-right: 1px solid #686868;
+	text-align: center;
+	font-size: 14px;
+}
+
+#new-game li .player-name {
+	width: 355px;
+}
+
+#new-game li .player-number {
+	width: 62px;
+	border-left: 1px solid #686868;
+	border-radius: 0;
+	text-align: center;	
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.game-info {
+	width: 472px;
+	height: 102px;
+	margin: 0 0 10px;
+	border-radius: 5px;
+	padding: 10px;
+	border: 2px solid #686868;
+}
+
+.game-info .left, .game-info .right {
+	width: 45%;
+	text-align: center;
+}
+
+.game-info h4 {
+	margin: 0;
+}
+
+.game-info span {
+	margin: 30px 0;
+	display: inline-block;
+	width: 43px;
+	font-size: 30px;
+	text-align: center;
+}
+
+.game-info select {
+	display: block;
+	height: 100%;
+	width: 95%;
+	outline: none;
+	border: 0;
+	font-size: 30px;
+	margin: 10px 0 0;
+	background: #fff;
+}
+
+.game-info .left select {	
+	text-indent: 40%; 
+	float: left;
+}
+
+.game-info .right select {	
+	text-indent: 25%; 
+	float: right;
+}
+
+#new-game .handball-court-half {
+	width: 472px;
+	height: 369px;
+	margin: 0 20px 0 0;
+	background: url('../img/handball_court_half.png');
+	background-size: cover;
+	display: block;
+	border-radius: 5px;
+}
+
+.jersey {
+	background: url('../img/jersey.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100px;
+	height: 75px;
+	display: block;
+	position: absolute;
+	line-height: 75px;
+	text-align: center;
+	font-weight: bold;
+}
+
+#LH {
+	margin: 289px 0 0 5px;
+}
+
+#LO {
+	margin: 189px 0 0 65px;
+}
+
+#MO {
+	margin: 160px 0 0 186px;	
+}
+
+#RO {
+	margin: 189px 0 0 307px;	
+}
+
+#RH {
+	margin: 289px 0 0 367px;
+}
+
+#CI {
+	margin: 75px 0 0 186px;		
+}
+
+#KP {
+	margin: 289px 0 0 186px;	
+}
+
+#new-game .right a.new-page {
+	height: 80px;
+	line-height: 80px;
+	width: 472px;
+	font-size: 20px;
+	text-align: center;
+	border: 2px solid #686868;
+	background: #e6e6e6;
+	display: block;
+	cursor: pointer;
+	border-radius: 5px;
+	color: #686868;
+}
+
+#new-game .right a.new-page:first-of-type {
+	margin: 10px 0;
+}	
+	
+/* ---------- MATCH ---------- */
+
+#match .game-info {
+    font-family: robotFont;
+	width: 400px;
+	text-transform: uppercase;
+	height: 115px;
+	margin: 10px auto;
+	background: #f9f9f9;
+	font-size: 14px;
+}
+
+#match .game-info span {
+	width: 37px;
+	margin: 5px 0;
+	font-weight: bold;
+	font-size: 24px;
+}
+
+#match .game-info .left + span {
+	margin: 20px 0 0;
+	font-size: 24px;
+}
+
+#match .game-info .time {
+	width: 100px;
+	margin: 0 auto;
+}
+
+#match .game-info .time span {
+	font-size: 14px;
+	width: auto;
+	margin: 0 auto;
+	display: block;
+}
+
+#match .game-info .time h4 {
+	margin: 0 0 10px;
+	font-size: 30px;
+	text-align: center;
+	letter-spacing: 2px;
+	font-size: 22px;
+	padding: 10px 0 0;
+}
+
+#match .game-info .suspention-team1, #match .game-info .suspention-team2 {
+	width: 100px;
+	height: 50px; 
+	padding: 5px 10px;
+	display: none;
+}
+
+#match .suspention-team1 span, #match .suspention-team2 span {
+	font-size: 14px;
+	display: block;
+	letter-spacing: 2px;
+	margin: 5px 0;
+	width: 100%;
+}
+
+#match .suspention-team1 span {
+	text-align: left;
+}
+
+#match .suspention-team2 span {
+	text-align: right;
+}
+
+#match .start-game, #match .stop-game {
+	height: 75px;
+	width: 150px;
+	background: -webkit-linear-gradient(#ececec 0%, #f8f8f8 100%);
+	border: 2px solid #686868;
+	line-height: 75px;
+	text-align: center;
+	font-size: 24px;
+}
+
+#match .start-game {
+	margin: 25px 0 0 100px;
+}
+
+#match .stop-game {
+	margin: 25px 100px 0 0;
+}
+
+#match .end-period-wrapper {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.75);
+}
+
+#match .end-period {
+	height: 150px;
+	width: 310px;
+	padding: 20px 0;
+	border-radius: 5px;
+	margin: 300px auto;
+	background: #f1fff4;
+}
+
+#match .end-period h4 {
+	margin: 0 20px 10px;
+}
+
+#match .end-period span {
+	font-size: 14px;
+	text-align: center;
+	display: block;
+	margin: 0;
+}
+
+#match .end-period div {
+	border-top: 1px solid #000;
+	text-align: center;
+	margin: 23px 0;
+	padding: 15px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	background: #50eb6f;
+}
+
+.handball-court {
+	background: url('../img/handball_court.png');
+	width: 912px;
+	height: 498px;
+	margin: 0 auto;
+}
+
+.handball-court .left, .handball-court .right {
+	height: 100%;
+	width: 50%;
+}
+
+#match .jersey {
+	height: 56.25px;
+	width: 75px;
+	line-height: 60px;
+}
+
+#match .left .LH {
+	margin: 5px 0 0 5px;
+}
+
+#match .left .LO {
+	margin: 75px 0 0 135px;
+}
+
+#match .left .MO {
+	margin: 220px 0 0 175px;
+}
+
+#match .left .RO {
+	margin: 375px 0 0 135px;
+}
+
+#match .left .RH {
+	margin: 438px 0 0 5px;
+}
+
+#match .left .CI {
+	margin: 220px 0 0 265px;
+}
+
+#match .left .KP {
+	margin: 220px 0 0 5px;
+}
+
+#match .right .LH {
+	margin: 438px 0 0 376px;
+}
+
+#match .right .LO {
+	margin: 375px 0 0 246px;
+}
+
+#match .right .MO {
+	margin: 220px 0 0 206px;
+}
+
+#match .right .RO {
+	margin: 75px 0 0 246px;
+}
+
+#match .right .RH {
+	margin: 5px 0 0 376px;
+}
+
+#match .right .CI {
+	margin: 220px 0 0 116px;
+}
+
+#match .right .KP {
+	margin: 220px 0 0 376px;
+}
+
+#match .jersey[data-substitute="1"] {
+	margin: 508px 0 0 0;
+}
+
+#match .jersey[data-substitute="2"] {
+	margin: 508px 0 0 80px;
+}
+
+#match .jersey[data-substitute="3"] {
+	margin: 508px 0 0 160px;
+}
+
+#match .jersey[data-substitute="4"] {
+	margin: 508px 0 0 240px;
+}
+
+#match .jersey[data-substitute="5"] {
+	margin: 568px 0 0 0;
+}
+
+#match .jersey[data-substitute="6"] {
+	margin: 568px 0 0 80px;
+}
+
+#match .jersey[data-substitute="7"] {
+	margin: 568px 0 0 160px;
+}
+
+.event-menu {
+	margin: 73px 221px;
+	position: absolute;
+	height: 348px;
+	width: 470px;
+	border-radius: 5px;
+	border: 2px solid #686868;
+	background: #fff;
+	display: none;
+}
+
+.event-menu .option {
+	height: 172px;
+	width: 155px;
+	float: left;
+	border: 1px solid #cbcbcb;
+}
+
+.event-menu .option .icon {
+	width: 100px;
+	height: 100px;
+	float: none;
+	display: block;
+	margin: 20px auto;
+}
+
+.event-menu .option span {
+	text-align: center;
+	width: 100%;
+	display: block;
+	font-size: 14px;
+}
+
+.goal {
+	display: none;
+	background: url('../img/handball-goal.png');
+	height: 255px; 
+	width: 400px; 
+	margin: 20px auto;
+	padding: 14px 15px 0;
+}
+
+.goal span {
+	display: block;
+	margin: 265px auto 0;
+	text-align: center;
+}
+
+.goal .area {
+	height: 80px;
+	width: 123px;
+	float: left;
+	margin: 0;
+}
+
+.goal .area .dot {
+	height: 35px;
+	width: 35px;
+	background: #636363;
+	margin: 20px auto;
+	border-radius: 100%;
+}
+
+.event-menu .technical-foul div, .event-menu .penalties div {
+	height: 172px;
+	width: 233px;
+	float: left;
+	border: 1px solid #cbcbcb;
+}
+
+.event-menu .technical-foul div .icon, .event-menu .penalties div .icon {
+	width: 100px;
+	height: 100px;
+	float: none;
+	display: block;
+	margin: 20px auto;
+}
+
+.event-menu .technical-foul div span, .event-menu .penalties div span {
+	text-align: center;
+	width: 100%;
+	display: block;
+	font-size: 14px;
+}
+
+/* ---------- RESULT ---------- */
+
+.pie-wrapper {
+	height: 250px;
+	width: 500px;
+	margin: 20px auto;
+}
+
+.pie-wrapper h3, .bar-wrapper h3 {
+	margin: 10px auto;
+	text-align: center;	
+}
+
+.pie-legend {
+	position: absolute;
+	float: left;
+	top: 50px;
+	left: 150px;
+	z-index: -1;
+}
+
+.pie-legend li {
+	list-style: none;
+	margin: 10px 30px 0 0;
+}
+
+.pie-legend span {
+	line-height: 30px;
+}
+
+.pie-legend .color {
+	width: 30px;
+	height: 30px;
+	float: left;
+	margin: 0 10px 0 0;
+}
+
+.bar-wrapper {
+	height: 250px;
+	width: 500px;
+	margin: 200px auto;
+}
+
+/* ---------- ALL-MATCHES ---------- */
+
+#all-matches .block {
+	margin: 30px 27px;
+}

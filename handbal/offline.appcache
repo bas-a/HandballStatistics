@@ -1,0 +1,45 @@
+CACHE MANIFEST
+# 2016-04-12 v1.0.0
+
+CACHE:
+# HTML files
+https://basariaansz.nl/handbal/index.html
+https://basariaansz.nl/handbal/newgame.html
+https://basariaansz.nl/handbal/match.html
+https://basariaansz.nl/handbal/all-matches.html
+https://basariaansz.nl/handbal/results.html
+
+# CSS files and IMAGES
+https://basariaansz.nl/handbal/css/style.css
+https://basariaansz.nl/handbal/css/custom-font.ttf
+https://basariaansz.nl/handbal/img/assist.png
+https://basariaansz.nl/handbal/img/back.png
+https://basariaansz.nl/handbal/img/Ball.png
+https://basariaansz.nl/handbal/img/circle-foul.png
+https://basariaansz.nl/handbal/img/foul.png
+https://basariaansz.nl/handbal/img/handball_court_half.png
+https://basariaansz.nl/handbal/img/handball_court.png
+https://basariaansz.nl/handbal/img/handball-goal.png
+https://basariaansz.nl/handbal/img/homescreen-icon.png
+https://basariaansz.nl/handbal/img/jersey.png
+https://basariaansz.nl/handbal/img/miss.png
+https://basariaansz.nl/handbal/img/pass-foul.png
+https://basariaansz.nl/handbal/img/redcard.png
+https://basariaansz.nl/handbal/img/swap.png
+https://basariaansz.nl/handbal/img/technical-foul.png
+https://basariaansz.nl/handbal/img/twomins.png
+https://basariaansz.nl/handbal/img/walk-foul.png
+https://basariaansz.nl/handbal/img/yellcard.png
+
+# JS files
+https://basariaansz.nl/handbal/js/lib/jquery.js
+https://basariaansz.nl/handbal/js/lib/jquery-ui.js
+https://basariaansz.nl/handbal/js/lib/jquery.ui.touch-punch.min.js
+https://basariaansz.nl/handbal/js/lib/stand-alone.js
+https://basariaansz.nl/handbal/js/lib/underscore.js
+https://basariaansz.nl/handbal/js/lib/hammer.jquery.js
+https://basariaansz.nl/handbal/js/lib/hammer.min.js
+https://basariaansz.nl/handbal/js/lib/chart.js
+https://basariaansz.nl/handbal/js/all-matches.js
+https://basariaansz.nl/handbal/js/app.js
+https://basariaansz.nl/handbal/js/results.js
